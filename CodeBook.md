@@ -34,18 +34,18 @@ Code book for source data can also be found in README.md file
 
 ### Code variables
  
-* filename - file of downloaded zip file
-* act_labels - loading UCI HAR Dataset/activity_labels.txt into data frame
-* features - UCI HAR Dataset/features.txt into data frame
-* measures - getting mean and standard deviation measures from the features data frame... as integers
-* train - loading UCI HAR Dataset/train/X_train.txt into data frame
-* act_train - loading UCI HAR Dataset/train/Y_train.txt into data frame
-* subject_train - loading UCI HAR Dataset/train/subject_train.txt into data frame
-* train - combining columns of train, act_train and subject_train data frames
-* test - loading UCI HAR Dataset/test/X_test.txt into data frame
-* act_test - loading UCI HAR Dataset/test/Y_test.txt into data frame
-* subject_test - loading UCI HAR Dataset/test/subject_test.txt into data frame
-* test - combining columns of test, act_test and subject_test data frames
-* test_train - merge the train and test data frames and add in descriptive column names from the measures.names character object
-* test_train.melted - take average of each variable for each subject/activity in test_train data frame and load into new data frame
-* test_train.mean - use dcast function to create data frame for export to tidy.txt
+* __filename__ - file of downloaded zip file
+* __act_labels__ - loading UCI HAR Dataset/activity_labels.txt into data frame
+* __features__ - UCI HAR Dataset/features.txt into data frame
+* __measures__ - getting mean and standard deviation measures from the features data frame... as integers
+* __train__ - loading UCI HAR Dataset/train/X_train.txt into data frame
+* __act_train__ - loading UCI HAR Dataset/train/Y_train.txt into data frame
+* __subject_train__ - loading UCI HAR Dataset/train/subject_train.txt into data frame
+* __train__ - combining columns of train, act_train and subject_train data frames
+* __test__ - loading UCI HAR Dataset/test/X_test.txt into data frame
+* __act_test__ - loading UCI HAR Dataset/test/Y_test.txt into data frame
+* __subject_test__ - loading UCI HAR Dataset/test/subject_test.txt into data frame
+* __test__ - combining columns of test, act_test and subject_test data frames
+* __test_train__ - merge the train and test data frames and add in descriptive column names from the measures.names character object
+* __test_train.melted__ - take average of each variable for each subject/activity in test_train data frame and load into new data frame
+* __test_train.mean__ - use dcast function to create data frame for export to tidy.txt
